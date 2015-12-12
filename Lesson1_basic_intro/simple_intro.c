@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <omp.h>
 
-
-void main()
+int main(int argc, const char *argv[])
 {
 	#pragma omp parallel
 	{
@@ -10,4 +9,7 @@ void main()
 	printf("hello(%d)",ID);
 	printf("world(%d).\n",ID);
 	}
+
+	return 0;
 }
+
