@@ -15,3 +15,8 @@ the cache coherency mechanisms in the system may force the whole line across the
 forcing memory stalls in addition to wasting system bandwidth.
 False sharing is an inherent artifact of automatically synchronized cache protocols and can also exist in environments
 such as distributed file system or databases, but current prevalence is limited to RAM caches."
+
+You can see the cache size using the command:
+> lscpu | grep cache
+
+For displaying information on CPU architecture 
