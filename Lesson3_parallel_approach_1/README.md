@@ -7,7 +7,7 @@ The reason for this is "False Sharing", since the 4 array elements are stored in
 each time we fetch the we need to do the same on the other cores. We are not sharing any data among the cores,
 and since the array is stored on the cache we get a bouncing effect.
 
-Here is a great explanation thaken from Wikipedia:
+Here is a great explanation taken from Wikipedia:
 >"By far the most common usage of this term is in modern multiprocessor CPU caches,
 where memory is cached in lines of some small power of two word size (e.g., 64 aligned, contiguous bytes).
 If two processors operate on independent data in the same memory address region storable in a single line,
